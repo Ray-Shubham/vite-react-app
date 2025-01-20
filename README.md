@@ -47,4 +47,36 @@ Props can be any data type or it can be the function
 
 Map method for list rendering
 
-nNote: Whenever we are using map method always use key prop, key props ensures unique for each list item(Faster updates and deletes)
+Note: Whenever we are using map method always use key prop, key props ensures unique for each list item(Faster updates and deletes)
+
+
+1. General prop provides additional information to a component <image source={} alternateText={} >
+2. Children prop : It is used to nest the components or jsx or text content.
+
+2.1 -> jsx
+
+<Image>
+
+<h3>Hello</h3>
+<h4>Good Morning</h4>
+
+</Image>
+
+2.2 -> Text
+
+<Image>
+
+Good Afternoon
+
+</Image>
+
+2.3 -> Component
+
+<Image>
+
+<heading/>
+
+</Image>
+
+
+Note: To receive the children prop we must use the children keyword.

@@ -3,9 +3,11 @@
 
 
 const MainHeading = (prop) => {
-    const{heading} = prop
+    console.log(prop,"Main Heading Prop")
+    const{heading,children} = prop
     return (
         <div>
+            {children}
             <h1>{heading}</h1>
         </div>
     )
