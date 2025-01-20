@@ -80,3 +80,71 @@ Good Afternoon
 
 
 Note: To receive the children prop we must use the children keyword.
+
+
+
+
+Hooks:
+
+1. Conatiner + Fiunctional components
+2. Presentation functional components
+
+Hooks were introduced in 2018 version 16.8
+
+Def: Hooks are reusable functions which let us  use of state and other react features without writing the class.
+
+Rules of Hooks:
+
+1. Hooks were only use in functions, it doesn't support in class.
+2. Hooks must always call at the top of the component and must import only from react.
+3. Hooks cannot be used inside the conditions, loops, switch statements.
+4. Hooks cannot be used in event triggerings.
+
+
+Examples:
+
+1. useState
+2. useEffect
+3. useRef
+4. useReducer
+5. useContext
+6. useCallback
+7. useMemo
+8. custom Hooks  ex: useCounter
+
+
+useState:
+
+
+useState is used in functional based components, it allows us to create and manage the data or information of a particular component.
+
+useState is replica of creating of state by constructor and using setState method in class components.
+
+
+Syntax:
+useState will accept initial argument.
+
+useState(10)
+
+initial argument can be any data type or function returning a value.
+Note: this argument is executed only for the first time, corresponding renders will ignore the initial argument changes.
+
+
+useState will return array
+
+const counter = useState(10)
+
+const [count, setCount]  = useState(10) ---> Final Syntax
+
+This array contains 2 elements.
+1. Current state
+2. set function
+
+Here in the useState we will always use "const" keyword which represents immutability of the state directly.
+
+The only way to change the state in useState is by using set function.
+
+
+
+
+

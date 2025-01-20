@@ -1,37 +1,57 @@
 import CustomButton from "./components/button.jsx";
 import Greeting from "./components/greeting.jsx";
 import MainHeading, { SecondaryHeading } from "./components/heading.jsx";
+import Counter from "./components/Hooks/usestate/Counter.jsx";
+import CustomTodo from "./components/Hooks/usestate/todo.jsx";
 import CustomImage from "./components/image.jsx";
 import CustomList from "./components/list.jsx";
 import { recipeData } from "./data/recipeData.js";
 
 const App = () => {
-  const imageListing = [
-    {
-      name: "bag1",
-      src: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-      height: "100",
-      width: "100",
-    },
-    {
-      name: "bag2",
-      src: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-      height: "100",
-      width: "100",
-    },
-    {
-      name: "bag3",
-      src: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-      height: "100",
-      width: "100",
-    },
-  ];
+  // const imageListing = [
+  //   {
+  //     name: "bag1",
+  //     src: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+  //     height: "100",
+  //     width: "100",
+  //   },
+  //   {
+  //     name: "bag2",
+  //     src: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+  //     height: "100",
+  //     width: "100",
+  //   },
+  //   {
+  //     name: "bag3",
+  //     src: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+  //     height: "100",
+  //     width: "100",
+  //   },
+  // ];
   return (
     <>
-      {
+
+
+    {/* <Counter /> */}
+
+    <CustomTodo />
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* {
       [{name:"Ray",role:"Mern Developer"},{name:"Ray",role:"Mern Developer"},{name:"Ray",role:"Mern Developer"}].map((eachName) => {
         return <Greeting text="I am software developer">{eachName}</Greeting>;
-      })}
+      })} */}
 
       {/* {
       recipeData.map(eachRecipe => {
