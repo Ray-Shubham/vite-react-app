@@ -148,3 +148,24 @@ The only way to change the state in useState is by using set function.
 
 
 
+useRef:
+
+useRef is used to persists the values between renders without causing re-render for the component.
+
+useRef is used to store the previous state.
+
+useRef is used to access the elements in the dom.
+
+
+Syntax:
+
+useRef accepts initial argument and returns the object.
+
+object contains current property.
+
+To access the content from the object, we need to use object.current
+
+
+
+
+
