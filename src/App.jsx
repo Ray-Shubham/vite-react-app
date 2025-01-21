@@ -32,28 +32,13 @@ const App = () => {
   // ];
   return (
     <>
+      {/* <Counter /> */}
 
+      {/* <CustomTodo /> */}
 
-    {/* <Counter /> */}
+      {/* <UseRefExample /> */}
 
-    {/* <CustomTodo /> */}
-
-
-    {/* <UseRefExample /> */}
-
-    <UncontrolledComponent />
-
-
-
-
-
-
-
-
-
-
-
-
+      <UncontrolledComponent />
 
       {/* {
       [{name:"Ray",role:"Mern Developer"},{name:"Ray",role:"Mern Developer"},{name:"Ray",role:"Mern Developer"}].map((eachName) => {
