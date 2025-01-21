@@ -166,6 +166,30 @@ object contains current property.
 To access the content from the object, we need to use object.current
 
 
+React Forms:
+
+1. Uncontrolled Components
+2. Controlled Components
+
+
+Uncontrolled components: In Uncontrolled components form state controls is controlled by DOM, React doesn't have any control with the forms.
+
+We cannot do any field validation.
+
+In Uncontrolled components, to access the elements from DOM we use "useRef Hook".
+
+Steps for Uncontrolled Components:
+
+1. Consider form in JSX
+2. To control the input elements in DOM, we need to attach ref attribute for the input element and value will be taken form useRef object reference.
+3. On Submit to collect the value we will use "object.current.value"
+4. Validate the inputs and submit the form (post api call)
+
+Controlled components: In Controlled components form state controls is controlled by React.
+
+We can do field validations here.
+
+
 
 
 
