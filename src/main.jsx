@@ -6,7 +6,6 @@ import CustomList from './components/list.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
-    <CustomList></CustomList>
+    <App /> 
   </StrictMode>,
 )
