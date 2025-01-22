@@ -169,3 +169,15 @@ Steps for Uncontrolled Components:
 Controlled components: In Controlled components form state controls is controlled by React.
 
 We can do field validations here.
+
+
+Controlled Components: React have control over the input states.
+
+Steps for Controlled Components:
+
+1. Take the form in react component.
+2. Take a states for each input in the form or single state for entire form.
+3. Provide valuee attribute for the input, assign the state that we created.
+4. For the field controls, we have onChange attribute which accepts the function.
+5. With in function we can collect input value by event.target.value
+
