@@ -2,6 +2,7 @@ import CustomButton from "./components/button.jsx";
 import Greeting from "./components/greeting.jsx";
 import MainHeading, { SecondaryHeading } from "./components/heading.jsx";
 import ControlledForm from "./components/Hooks/Forms/Controlled/controlled_form.jsx";
+import ControlledStateForm from "./components/Hooks/Forms/Controlled/controlledState.jsx";
 import UncontrolledComponent from "./components/Hooks/Forms/Uncontrolled/uncontrolled-form.jsx";
 import UseRefExample from "./components/Hooks/useRef/useRefEx.jsx";
 import Counter from "./components/Hooks/usestate/Counter.jsx";
@@ -41,7 +42,9 @@ const App = () => {
 
       {/* <UncontrolledComponent /> */}
 
-      <ControlledForm />
+      {/* <ControlledForm /> */}
+
+      <ControlledStateForm />
 
       {/* {
       [{name:"Ray",role:"Mern Developer"},{name:"Ray",role:"Mern Developer"},{name:"Ray",role:"Mern Developer"}].map((eachName) => {
