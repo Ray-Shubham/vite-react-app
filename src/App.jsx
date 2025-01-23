@@ -9,6 +9,7 @@ import Counter from "./components/Hooks/usestate/Counter.jsx";
 import CustomTodo from "./components/Hooks/usestate/todo.jsx";
 import CustomImage from "./components/image.jsx";
 import CustomList from "./components/list.jsx";
+import RecipeComponent from "./components/Recipes/recipe.jsx";
 import { recipeData } from "./data/recipeData.js";
 
 const App = () => {
@@ -43,6 +44,8 @@ const App = () => {
       {/* <UncontrolledComponent /> */}
 
       {/* <ControlledForm /> */}
+
+      <RecipeComponent />
 
       <ControlledStateForm />
 

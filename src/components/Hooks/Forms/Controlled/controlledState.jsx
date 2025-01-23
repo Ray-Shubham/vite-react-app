@@ -9,7 +9,7 @@ const ControlledStateForm = () => {
     mobileNumber: "",
     state: "",
   };
-  const [formData, setFormData] = useState( initialFormData );
+  const [formData, setFormData] = useState(initialFormData);
 
   const [formError, setFormError] = useState({
     modelErr: "",
@@ -33,7 +33,13 @@ const ControlledStateForm = () => {
     e.preventDefault();
     console.log(formData);
 
-    setSubmittedData([...submittedData, formData]);
+    const newFormData = {
+      data1: formData.model,
+      data2: formData.mobileNumber,
+      data3: formData.state,
+    };
+
+    setSubmittedData([...submittedData, newFormData]);
     setFormData(initialFormData);
     // if(modelError || mobileError){
     //     alert("Please fill properly");
