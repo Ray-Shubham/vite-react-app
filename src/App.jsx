@@ -4,6 +4,7 @@ import MainHeading, { SecondaryHeading } from "./components/heading.jsx";
 import ControlledForm from "./components/Hooks/Forms/Controlled/controlled_form.jsx";
 import ControlledStateForm from "./components/Hooks/Forms/Controlled/controlledState.jsx";
 import UncontrolledComponent from "./components/Hooks/Forms/Uncontrolled/uncontrolled-form.jsx";
+import UseEffectExample from "./components/Hooks/useEffect/useEffectEx.jsx";
 import UseRefExample from "./components/Hooks/useRef/useRefEx.jsx";
 import Counter from "./components/Hooks/usestate/Counter.jsx";
 import CustomTodo from "./components/Hooks/usestate/todo.jsx";
@@ -45,9 +46,11 @@ const App = () => {
 
       {/* <ControlledForm /> */}
 
-      <RecipeComponent />
+      {/* <RecipeComponent /> */}
 
-      <ControlledStateForm />
+      {/* <ControlledStateForm /> */}
+
+      <UseEffectExample />
 
       {/* {
       [{name:"Ray",role:"Mern Developer"},{name:"Ray",role:"Mern Developer"},{name:"Ray",role:"Mern Developer"}].map((eachName) => {

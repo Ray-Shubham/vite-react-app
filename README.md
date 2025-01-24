@@ -170,7 +170,6 @@ Controlled components: In Controlled components form state controls is controlle
 
 We can do field validations here.
 
-
 Controlled Components: React have control over the input states.
 
 Steps for Controlled Components:
@@ -181,3 +180,44 @@ Steps for Controlled Components:
 4. For the field controls, we have onChange attribute which accepts the function.
 5. With in function we can collect input value by event.target.value
 
+useEffect Hook:
+
+useEffect is a react functional hook which is used to cause side effects with in the component.
+
+Side Effects : async actions - dom manipulation, event-listener, data fetching, third party subscriptions.
+
+useEffect is replacement of 3 life cycle methods in class components.
+
+1. componentDidMount
+2. componentDidUpdate
+3. componentWillUnmount
+
+Syntax : useEffect(()=>{},[])
+
+Note: useEffect behaviour will depends on second argument which is an array.
+
+Case1: If array is empty, component will behave like componentDidMount. It will run only once in a life cycle.
+
+useEffect(()=>{},[])
+
+Case2: If array is filled with values, depending upon value changes useEffect will behave like a componentDidUpdate.
+
+useEffect(()=>{},[value1,value2,....])
+If values were changing then useEffect will run.
+
+This array will call it as a dependency array.
+
+Case3 : No Dependency array
+
+useEffect(()=>{})
+
+If no dependency array, component will keep on re-rendering whenever state or prop changes.
+It might also leads to infinite rendering of components.
+
+Case4: If useEffect callback functions returns the function, within the returned function we can prevent memory leaks of the comopnent - componentWillUnmount.
+
+useEffect(()=>{
+return () => {
+// Prevent the memory leaks
+}
+},[])
